@@ -1,0 +1,41 @@
+.list-item {
+  border-bottom: 1px solid gray;
+  padding: 1rem 0;
+}
+
+.list-item__flex {
+  display: flex;
+}
+
+.list-item__photo {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.list-item__center div,
+.list-item__right div {
+  margin: 0.5rem;
+}
+
+.list-item__center div,
+.list-item__right div {
+  color: #8f8f8f;
+}
+
+div.list-item__name {
+  color: #393c3f;
+  font-weight: bold;
+}
+
+.list-item__right {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.list-item__action {
+  text-align: right;
+}
