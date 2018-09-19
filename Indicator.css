@@ -1,0 +1,15 @@
+.indicator {
+  width: 8px;
+}
+
+.indicator--default {
+  background: transparent;
+}
+
+.indicator--approved {
+  background: #008e4b;
+}
+
+.indicator--denied {
+  background: red;
+}
