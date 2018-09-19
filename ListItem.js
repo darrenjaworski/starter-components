@@ -11,9 +11,6 @@ class ListItem extends React.Component {
     this.state = {
       status: undefined
     };
-
-    this.handleDeny = this.handleDeny.bind(this);
-    this.handleApprove = this.handleApprove.bind(this);
   }
 
   handleDeny() {
@@ -41,12 +38,15 @@ class ListItem extends React.Component {
           </div>
           <div className="list-item__right">
             <div>{this.props.date}</div>
-            <div>{this.props.total} Net Available</div>
+            <div>
+              {this.props.total}
+              Net Available
+            </div>
           </div>
         </div>
         <div className="list-item__action">
-          <Button onClick={this.handleDeny}>Deny</Button>
-          <Button onClick={this.handleApprove}>Approve</Button>
+          <Button onClick={this.handleDeny.bind(this)}>Deny</Button>
+          <Button onClick={this.handleApprove.bind(this)}>Approve</Button>
         </div>
       </div>
     );
